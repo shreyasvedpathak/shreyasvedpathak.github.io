@@ -125,7 +125,6 @@
 	</section><!-- End Hero -->
 
 	<main id="main">
-
 		<!-- ======= About Section ======= -->
 		<section id="about" class="about section-bg">
 			<div class="container">
@@ -211,7 +210,7 @@
 								<ul>
 									<li>Location: Pune, India</li>
 									<li>Contact: +91 9881898291</li>
-									<li>Mail: shreyasvedpathak@gmail.com</li>
+									<li>Mail: <a href="mailto:shreyasvedpathak@gmail.com">shreyasvedpathak@gmail.com</a></li>
 								</ul>
 							</div>
 						</div>
@@ -279,7 +278,7 @@
 										<div class="hvr-underline-from-left shadow-sm card skill-card my-2">
   											<img height="50px" class="m-2" src=${url}>
 											<div class="card-footer text-center">
-												<small class="card-text">${skill}</small>
+												<small class="card-text fw-bold">${skill}</small>
 											</div>
 										</div>
 									</div>`)
@@ -345,7 +344,7 @@
 					</div>
 				</div>
 				<script>
-					function addCard(type, card_type, image, title, link, bg, txt_col) {
+					function addCard(type, card_type, image, title, link, bg, txt_col, date = "") {
 						document.writeln(`
 						<div class="col-lg-4 col-md-6 portfolio-item filter-${type}">
 							<div class="shadow-lg portfolio-wrap">
@@ -353,8 +352,9 @@
 									<img src="assets/img/portfolio/${image}" class="img-fluid" alt="">
 									<div style="height: 120px" class="card-header">
 										<h5>${title}</h5>
+										<small class="fst-italic">${date}</small>
 										</div>
-									<div class="portfolio-links">
+									<div class="portfolio-links">										
 										<a style="background-color: ${bg}" href="${link}" target="_blank" title="More Details"><i style="color: ${txt_col};" class="bx bx-link-external"></i></a>
 									</div>
 								</div>
@@ -368,7 +368,10 @@
 
 					<script>
 						addCard("paper", "success", "pcos.png", "PCOcare: PCOS Detection and Prediction using Machine Learning Algorithms (Paper)",
-							"https://www.researchgate.net/publication/348627784_PCOcare_PCOS_Detection_and_Prediction_using_Machine_Learning_Algorithms", "#198754", "white");
+							"https://www.researchgate.net/publication/348627784_PCOcare_PCOS_Detection_and_Prediction_using_Machine_Learning_Algorithms", "#198754", "white", "December, 2020");
+
+						addCard("paper", "success", "genomics.jpg", "Genomics, High Performance Computing and Machine Learning",
+								"https://www.researchgate.net/publication/352869810_Genomics_High_Performance_Computing_and_Machine_Learning", "#198754", "white", "June, 2021");
 
 						addCard("work", "primary", "pcos.png", "PCOcare: PCOS Detection & Prediction using Machine Learning (Project)",
 							"https://www.kaggle.com/shreyasvedpathak/pcocare-pcos-detection-prediction-using-ml", "#0d6efd", "white");
@@ -552,7 +555,7 @@
 		</section>-->
 
 		<!-- ======= Contact Section ======= -->
-		<section id="contact" class="contact section-bg">
+		<section id="contact" class="contact">
 			<div class="container">
 				<div class="section-title">
 					<h2>Contact</h2>
