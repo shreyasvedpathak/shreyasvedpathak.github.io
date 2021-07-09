@@ -423,7 +423,7 @@ section {
 }
 
 .section-bg {
-  background: #f1f2f6;
+  background: #f1f2f6;  
 }
 
 .section-title {
@@ -865,34 +865,24 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Interests
+# Courses and Certificate
 --------------------------------------------------------------*/
-.interests .icon-box {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.08);
-  transition: ease-in-out 0.3s;
-}
+.cc {
+				position: relative;
+				list-style: none;
+				margin-left: 0;
+				padding-left: 1.2em;
+			}
 
-.interests .icon-box i {
-  font-size: 32px;
-  padding-right: 10px;
-  line-height: 1;
-}
+			.cc li:before {
+				content: "✔";
+				position: absolute;
+				left: 0;
+			}
 
-.interests .icon-box h3 {
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-size: 16px;
-  color: #000;
-}
-
-.interests .icon-box:hover {
-  background: rgba(255, 255, 255, 0.12);
-}
+			.cc li {
+				margin: 10px;
+			}
 
 /*--------------------------------------------------------------
 # Services
@@ -1052,11 +1042,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #000;
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1076,7 +1066,7 @@ section {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: #000;
 }
 
 .contact .info .email p {
@@ -1103,14 +1093,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #050d18;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #050d18;
   color: #fff;
 }
 
