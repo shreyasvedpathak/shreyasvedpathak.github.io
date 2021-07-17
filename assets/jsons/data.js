@@ -78,6 +78,13 @@ var port = [
     link: "https://github.com/shreyasvedpathak/Data-Structure-Python",
     date: "",
   },
+  {
+    type: "work",
+    image: "hardhat.png",
+    title: "Hardhat Detection with Dynamic Bounding Boxes using Tensorflow Object Detection API",
+    link: "https://colab.research.google.com/drive/17F9A3hWmNoorzMvWrol5D3Ko3ph34pPb",
+    date: "",
+  },
 ];
 
 var CC = [

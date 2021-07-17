@@ -98,15 +98,13 @@
 										<i class='bx bx-chevrons-right'></i>Professional Experience</a></li>
 								<li><a href="#skills" class="link-dark rounded">
 										<i class='bx bx-chevrons-right'></i>Skills</a></li>
+								<li><a href="#cc" class="link-dark rounded">
+										<i class='bx bx-chevrons-right'></i>Courses and Certificates</a></li>
 							</ul>
 						</div>
 					</li>
 					<li><a href="#portfolio"><i class="bx bx-book-content"></i>
 							<span>Portfolio</span>
-						</a>
-					</li>
-					<li><a href="#cc"><i class="bx bx-book-content"></i>
-							<span>Courses and Certificates</span>
 						</a>
 					</li>
 					<li><a href="#contact"><i class="bx bx-envelope"></i>
@@ -325,6 +323,25 @@
 			</div>
 		</section><!-- End Skills Section -->
 
+		<!-- ======= Courses and Certificate Section ======= -->
+		<section id="cc" class="services">
+			<div class="container">
+		
+				<div class="section-title">
+					<h2>Courses and Certificates</h2>
+				</div>
+		
+				<div class="row">
+					<div class="accordion accordion-flush" id="accordionExample">
+						<script>
+							for (var i = 0; i < CC.length; i++) {
+								addCC(i, CC[i]['title'], CC[i]['by'], CC[i]['learnings'], CC[i]['link']);
+							}
+						</script>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- ======= Portfolio Section ======= -->
 		<section id="portfolio" class="portfolio section-bg">
@@ -355,24 +372,7 @@
 			</div>
 		</section><!-- End Portfolio Section -->
 
-		<section id="cc" class="services">
-			<div class="container">
-
-				<div class="section-title">
-					<h2>Courses and Certificates</h2>
-				</div>
-
-				<div class="row">
-					<div class="accordion accordion-flush" id="accordionExample">
-						<script>
-							for (var i = 0; i < CC.length; i++) {
-								addCC(i, CC[i]['title'], CC[i]['by'], CC[i]['learnings'], CC[i]['link']);
-							}
-						</script>
-					</div>
-				</div>
-			</div>
-		</section>
+		
 
 		<!-- ======= Contact Section ======= -->
 		<section id="contact" class="contact section-bg">

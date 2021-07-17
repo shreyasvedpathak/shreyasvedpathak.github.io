@@ -54,16 +54,16 @@ function addCard(data) {
 
 function addCC(i, title, by, learnings, link) {
   document.writeln(`						
-        <div class="accordion-item">
+        <div class="accordion-item text-white">
 							<h2 class="accordion-header" id="heading${i}">
-								<button class="accordion-button bg-body" type="button" data-bs-toggle="collapse"
+								<button class="accordion-button bg-body fw-bold" type="button" data-bs-toggle="collapse"
 									data-bs-target="#collapse${i}" aria-expanded="true" aria-controls="collapse${i}">
 									${title}
 								</button>
 							</h2>
 							<div id="collapse${i}" class="accordion-collapse collapse"
 								aria-labelledby="heading${i}" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
+								<div class="accordion-body bg-primary">
 									<div class="row px-3">
 										<div>
 											<h6 class="fw-bold">Offered by : ${by}</h6>
@@ -81,7 +81,7 @@ function addCC(i, title, by, learnings, link) {
 										</div>
 										<div class="py-4">
 											<a href="${link}">
-												<button type="button" class="btn btn-outline-dark btn-lg">Certificate</button>
+												<button type="button" class="btn btn-light btn-sm shadow">Certificate</button>
 											</a>
 										</div>
 									</div>
