@@ -43,11 +43,48 @@ var port = [
     date: "June, 2021",
   },
   {
+    type: "paper",
+    image: "nano.jpg",
+    title:
+      "Segmentation of Fire and Smoke in Nano-Satellite Imagery using Mask R-CNN and Res-UNet",
+    link: "",
+    date: "",
+  },
+  {
     type: "work",
     image: "pcos.png",
     title:
       "PCOcare: PCOS Detection & Prediction using Machine Learning (Project)",
     link: "https://www.kaggle.com/shreyasvedpathak/pcocare-pcos-detection-prediction-using-ml",
+    date: "",
+  },
+  // {
+  //   type: "work",
+  //   image: "tensorflow.png",
+  //   title: "deeplearning.ai - Tensorflow: Advanced Techniques Solutions",
+  //   link: "https://github.com/shreyasvedpathak/Tensorflow-Advanced-Techniques-Solutions",
+  //   date: "",
+  // },
+  // {
+  //   type: "work",
+  //   image: "pytorch.png",
+  //   title: "deeplearning.ai - Generative Adversarial Networks GANs Solutions",
+  //   link: "https://github.com/shreyasvedpathak/Generative-Adversarial-Networks",
+  //   date: "",
+  // },
+  {
+    type: "work",
+    image: "hardhat.png",
+    title:
+      "Hardhat Detection with Dynamic Bounding Boxes using Tensorflow Object Detection API",
+    link: "https://colab.research.google.com/drive/17F9A3hWmNoorzMvWrol5D3Ko3ph34pPb",
+    date: "",
+  },
+  {
+    type: "work",
+    image: "loan.png",
+    title: "Loan Management System - Flask API",
+    link: "",
     date: "",
   },
   {
@@ -59,32 +96,11 @@ var port = [
   },
   {
     type: "work",
-    image: "tensorflow.png",
-    title: "deeplearning.ai - Tensorflow: Advanced Techniques Solutions",
-    link: "https://github.com/shreyasvedpathak/Tensorflow-Advanced-Techniques-Solutions",
-    date: "",
-  },
-  {
-    type: "work",
-    image: "pytorch.png",
-    title: "deeplearning.ai - Generative Adversarial Networks GANs Solutions",
-    link: "https://github.com/shreyasvedpathak/Generative-Adversarial-Networks",
-    date: "",
-  },
-  {
-    type: "work",
     image: "data-structures.png",
     title: "Data Structures and Algorithms in Python3",
     link: "https://github.com/shreyasvedpathak/Data-Structure-Python",
     date: "",
-  },
-  {
-    type: "work",
-    image: "hardhat.png",
-    title: "Hardhat Detection with Dynamic Bounding Boxes using Tensorflow Object Detection API",
-    link: "https://colab.research.google.com/drive/17F9A3hWmNoorzMvWrol5D3Ko3ph34pPb",
-    date: "",
-  },
+  }
 ];
 
 var CC = [
