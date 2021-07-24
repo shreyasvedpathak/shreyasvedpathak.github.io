@@ -5,9 +5,9 @@ function renderSkills(skills) {
 
     document.writeln(`
             <div class="col-lg-2 col-6">
-                <div class="hvr-underline-from-left shadow-sm card skill-card my-2">
+                <div class="hvr-underline-from-left shadow card skill-card my-2">
                     <img height="50px" class="m-2" src=${url}>
-                    <div class="card-footer text-center">
+                    <div class="card-footer text-center text-white bg-dark">
                         <small class="card-text fw-bold">${skill}</small>
                     </div>
                 </div>
