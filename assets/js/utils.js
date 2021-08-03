@@ -16,25 +16,24 @@ function renderSkills(skills) {
   }
 }
 
-
 function addCard(data) {
-    var type = data['type'];
-    var image = data['image'];
-    var title = data['title'];
-    var link = data['link'];
-    var date = data['date'];
-    
-    var txt_col = "white";
-    
-    var card_type = "primary";
-    var bg = "#0d6efd";
+  var type = data["type"];
+  var image = data["image"];
+  var title = data["title"];
+  var link = data["link"];
+  var date = data["date"];
 
-    if (type === "paper") {
-        card_type = "success";
-        bg = "#198754";
-    }
+  var txt_col = "white";
 
-    document.writeln(`
+  var card_type = "primary";
+  var bg = "#0d6efd";
+
+  if (type === "paper") {
+    card_type = "success";
+    bg = "#198754";
+  }
+
+  document.writeln(`
                 <div class="col-lg-4 col-md-6 portfolio-item filter-${type}">
                     <div class="shadow-lg portfolio-wrap">
                         <div class="card text-white bg-${card_type}">	
@@ -53,10 +52,11 @@ function addCard(data) {
 }
 
 function addCC(i, title, by, learnings, link) {
+  
   document.writeln(`						
         <div class="accordion-item text-white">
 							<h2 class="accordion-header" id="heading${i}">
-								<button class="accordion-button bg-body fw-bold" type="button" data-bs-toggle="collapse"
+								<button class="accordion-button bg-body fw-bold collapsed" type="button" data-bs-toggle="collapse"
 									data-bs-target="#collapse${i}" aria-expanded="true" aria-controls="collapse${i}">
 									${title}
 								</button>
@@ -66,18 +66,18 @@ function addCC(i, title, by, learnings, link) {
 								<div class="accordion-body bg-primary">
 									<div class="row px-3">
 										<div>
-											<h6 class="fw-bold">Offered by : ${by}</h6>
+											<h6 class="">Offered by : ${by}</h6>
 										</div>									
 										<div>
-											<h6 class="fw-bold">Learnings :</h6>
+											<h6 class="">Learnings :</h6>
 											<ul class="cc">						
     `);
 
-    for(var i = 0; i < learnings.length; i++){
-        document.writeln(`<li>${learnings[i]}</li>`);
-    }
+  for (var i = 0; i < learnings.length; i++) {
+    document.writeln(`<li>${learnings[i]}</li>`);
+  }
 
-    document.writeln(`</ul>
+  document.writeln(`</ul>
 										</div>
 										<div class="py-4">
 											<a href="${link}">

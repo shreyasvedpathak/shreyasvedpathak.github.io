@@ -9,8 +9,9 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat', "Open Sans", sans-serif;
   color: #272829;
+  font-weight: 500;
 }
 
 a {
@@ -78,8 +79,21 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding-bottom: 100px;
-  background: #040b14;
+  background: linear-gradient(90deg, #0f1831, #000);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
   overflow-y: scroll;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #header::-webkit-scrollbar {
@@ -128,7 +142,7 @@ h6 {
   font-size: 24px;
   margin: 0;
   padding: 0;
-  font-weight: 700;
+  font-weight: 400;
   -moz-text-align-last: center;
   text-align-last: center;
   font-family: "Poppins", sans-serif;
@@ -192,14 +206,19 @@ h6 {
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
+  font-weight: 400;
+}
+
+.nav-menu ul li ul li{
+  font-weight: 300;
 }
 
 .nav-menu a,
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #a8a9b4;
-  padding: 12px 15px;
+  color: #c4c4c4;
+  padding: 8px 25px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
@@ -209,7 +228,7 @@ h6 {
 .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: #6f7180;
+  color: #d2dae2;
 }
 
 .nav-menu a:hover,
@@ -256,6 +275,7 @@ h6 {
 .mobile-nav-active #header {
   left: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -408,7 +428,7 @@ h6 {
 .hero-text {
   margin: 0 0 10px 0;
   font-size: 64px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   line-height: 56px;
   color: #fff;
@@ -423,7 +443,7 @@ section {
 }
 
 .section-bg {
-  background: #f1f2f6;  
+  background: #f1f2f6;
 }
 
 .section-title {
@@ -489,6 +509,10 @@ section {
   margin-bottom: 0;
 }
 
+.about .profile_img {
+  border-radius: 50%;
+  border: 10px solid;
+}
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -868,21 +892,22 @@ section {
 # Courses and Certificate
 --------------------------------------------------------------*/
 .cc {
-				position: relative;
-				list-style: none;
-				margin-left: 0;
-				padding-left: 1.2em;
-			}
+  position: relative;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.2em;
+}
 
-			.cc li:before {
-				content: "✔";
-				position: absolute;
-				left: 0;
-			}
+.cc li:before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+}
 
-			.cc li {
-				margin: 10px;
-			}
+.cc li {
+  margin: 10px;
+  font-weight: 300;
+}
 
 /*--------------------------------------------------------------
 # Services

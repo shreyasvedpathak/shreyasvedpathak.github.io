@@ -5,7 +5,6 @@ var prog = {
   "C++": "c-plusplus",
   Python: "python",
   R: "r-lang",
-  Golang: "go",
 };
 
 var ds = {
