@@ -32,6 +32,7 @@ function addCard(data) {
     card_type = "success";
     bg = "#198754";
   }
+  
 
   document.writeln(`
                 <div class="col-lg-4 col-md-6 portfolio-item filter-${type}">
