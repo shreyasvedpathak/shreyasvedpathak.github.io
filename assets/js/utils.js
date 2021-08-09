@@ -5,7 +5,7 @@ function renderSkills(skills) {
 
     document.writeln(`
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 col-6">
-                <div class="hvr-underline-from-left shadow card skill-card my-2">
+                <div class="shadow card skill-card my-2">
                     <img height="50px" class="m-2" src=${url}>
                     <div class="card-footer text-center text-white bg-dark">
                         <small class="card-text fw-bold">${skill}</small>
@@ -87,14 +87,14 @@ function addCard(data) {
 							</div>
 						</div>
 						<div class="mc-description d-flex align-items-end shadow">
-            <img style="width: 100%;"
+            <img style="width: 100%;" class="border-bottom border-dark border-1"
 									src="assets/img/portfolio/${image}">
 						</div>
 						<a class="mc-btn-action shadow">
 							<i class="fas fa-bars"></i>
 						</a>
 						<div class="mc-footer">
-              <div class="p-2">
+              <div class="p-2 my-1">
               `
   );
   for (var i = 0; i < keywords.length; i++) {
@@ -167,7 +167,7 @@ $(function () {
       card.children("h2").css({ "font-size": "1.2rem" });
       window.setTimeout(function () {
         icon
-          .removeClass("fa-arrow-left")
+          .removeClass("fa-times")
           .removeClass("fa-spin-fast")
           .addClass("fa-bars");
       }, 600);
@@ -178,7 +178,7 @@ $(function () {
         icon
           .removeClass("fa-bars")
           .removeClass("fa-spin-fast")
-          .addClass("fa-arrow-left");
+          .addClass("fa-times");
       }, 600);
     }
   });

@@ -33,6 +33,7 @@ var port = [
       "PCOcare: PCOS Detection and Prediction using Machine Learning Algorithms (Paper)",
     link: "https://www.researchgate.net/publication/348627784_PCOcare_PCOS_Detection_and_Prediction_using_Machine_Learning_Algorithms",
     date: "December, 2020",
+    desc: "",
     keywords: ["Machine Learning", "Healthcare", "Data Analysis"],
   },
   {
@@ -41,6 +42,7 @@ var port = [
     title: "Genomics, High Performance Computing and Machine Learning",
     link: "https://www.researchgate.net/publication/352869810_Genomics_High_Performance_Computing_and_Machine_Learning",
     date: "June, 2021",
+    desc: "",
     keywords: [
       "Machine Learning",
       "Deep Learning",
@@ -55,6 +57,7 @@ var port = [
       "Segmentation of Fire and Smoke in Nano-Satellite Imagery using Mask R-CNN and Res-UNet",
     link: "",
     date: "",
+    desc: "",
     keywords: ["Deep Learning", "Computer Vision", "Image Segmentation"],
   },
   {
@@ -64,7 +67,13 @@ var port = [
       "PCOcare: PCOS Detection & Prediction using Machine Learning (Project)",
     link: "https://www.kaggle.com/shreyasvedpathak/pcocare-pcos-detection-prediction-using-ml",
     date: "",
-    keywords: ["Machine Learning", "Healthcare", "Data Analysis"],
+    desc: "",
+    keywords: [
+      "Machine Learning",
+      "Feature Engineering",
+      "Exploratory Data Analysis",
+      "Healthcare",
+    ],
   },
   // {
   //   type: "work",
@@ -87,6 +96,7 @@ var port = [
       "Hardhat Detection with Dynamic Bounding Boxes using Tensorflow Object Detection API",
     link: "https://colab.research.google.com/drive/17F9A3hWmNoorzMvWrol5D3Ko3ph34pPb",
     date: "",
+    desc: "Detecting Hardhat in Real time and drawing bounding boxes according to the Hardhat color, for security reasons.",
     keywords: [
       "Deep Learning",
       "Computer Vision",
@@ -100,7 +110,8 @@ var port = [
     title: "Loan Management System - Flask API",
     link: "",
     date: "",
-    keywords: ["Flask", "API"],
+    desc: "",
+    keywords: ["Flask", "API", "SQLALCHEMY", "sqlite"],
   },
   {
     type: "work",
@@ -108,6 +119,7 @@ var port = [
     title: "Kaggle Competition: Titanic Survival Prediction - Top 4%",
     link: "https://www.kaggle.com/shreyasvedpathak/titanic-survival-prediction-top-4",
     date: "",
+    desc: "",
     keywords: ["Machine Learning", "Exploratory Data Analysis", "Competition"],
   },
   {
@@ -116,6 +128,7 @@ var port = [
     title: "Data Structures and Algorithms in Python3",
     link: "https://github.com/shreyasvedpathak/Data-Structure-Python",
     date: "",
+    desc: "",
     keywords: [
       "Stack",
       "Binary Tree",
