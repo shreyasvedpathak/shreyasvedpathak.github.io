@@ -56,26 +56,9 @@ function addCard(data) {
     card_color = colors[10];
   }
 
-  // document.writeln(`
-  //               <div class="col-lg-4 col-md-6 portfolio-item filter-${type}">
-  //                   <div class="shadow-lg portfolio-wrap">
-  //                       <div class="card text-white bg-${card_color}">
-  //                           <img src="assets/img/portfolio/${image}" class="img-fluid" alt="">
-  //                           <div style="height: 120px" class="card-header">
-  //                               <h5>${title}</h5>
-  //                               <small class="fst-italic">${date}</small>
-  //                               </div>
-  //                           <div class="portfolio-links">
-  //                               <a style="background-color: ${bg}" href="${link}" target="_blank" title="More Details"><i style="color: ${txt_col};" class="bx bx-link-external"></i></a>
-  //                           </div>
-  //                       </div>
-  //                   </div>
-  //               </div>
-  //           `);
-
   document.writeln(
     `
-    <div class="col-lg-4 col-md-6 portfolio-item filter-${type}">
+    <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item filter-${type}">
 					<article class="material-card ${card_color}">
 						<h2 class="title shadow">
 							${title}
@@ -118,7 +101,7 @@ function addCard(data) {
     `);
 }
 
-function addCC(i, title, by, learnings, link) {
+function addCC(i, title, by, learnings, link, keywords) {
   document.writeln(`						
         <div class="accordion-item text-white">
 							<h2 class="accordion-header" id="heading${i}">
@@ -140,16 +123,28 @@ function addCC(i, title, by, learnings, link) {
     `);
 
   for (var i = 0; i < learnings.length; i++) {
-    document.writeln(`<li>${learnings[i]}</li>`);
-  }
+    document.writeln(`<li style="font-weight: 400">${learnings[i]}</li>`);
+  };
 
   document.writeln(`</ul>
 										</div>
-										<div class="py-4">
-											<a href="${link}">
-												<button type="button" class="btn btn-light btn-sm shadow">Certificate</button>
-											</a>
-										</div>
+                    <div class="mt-3 row">
+                      <div class="col-8">
+                        `);
+  for (var i = 0; i < keywords.length; i++) {
+    document.writeln(
+      `<span class="badge rounded-pill bg-light text-dark my-1">${keywords[i]}</span>`
+    );
+  };
+
+  document.writeln(`                        
+                      </div>
+                      <div class="col-4 d-flex justify-content-end align-items-center">
+                        <a href="${link}">
+                          <button type="button" class="btn btn-dark rounded-pill shadow fw-bold">Certificate</button>
+                        </a>
+										  </div>
+                    </div>										
 									</div>
 								</div>
 							</div>

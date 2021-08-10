@@ -108,7 +108,7 @@ var port = [
     type: "work",
     image: "loan.png",
     title: "Loan Management System - Flask API",
-    link: "",
+    link: "https://github.com/shreyasvedpathak/loan-management-api",
     date: "",
     desc: "",
     keywords: ["Flask", "API", "SQLALCHEMY", "sqlite"],
@@ -153,6 +153,13 @@ var CC = [
       "Apply RNNs, GRUs, and LSTMs as you train them using text repositories.",
     ],
     link: "https://coursera.org/share/d7a98b114f8f859451b40a1d4d609fa4",
+    keywords: [
+      "Computer Vision",
+      "Convolutional Neural Network",
+      "Machine Learning",
+      "Natural Language Processing",
+      "Sequence Models and Time Series",
+    ],
   },
   {
     title: "TensorFlow: Advanced Techniques",
@@ -164,6 +171,14 @@ var CC = [
       "Explore generative deep learning, and how AIs can create new content, from Style Transfer through Auto Encoding and VAEs to GANs.",
     ],
     link: "https://coursera.org/share/e4553f62ae4cfdab2648bf929841e924",
+    keywords: [
+      "Model Interpretability",
+      "Custom and Exotic Models",
+      "Generative Machine Learning",
+      "Object Detection",
+      "Image Segmentation",
+      "Tensorflow Object Detection API"
+    ],
   },
   {
     title: "Generative Adversarial Networks (GANs)",
@@ -174,7 +189,12 @@ var CC = [
       "Use GANs for data augmentation and privacy preservation, survey GANs applications, and examine and build Pix2Pix and CycleGAN for image translation.",
     ],
     link: "https://coursera.org/share/c7b450b976c47861e4317070cc93358b",
+    keywords: [
+      "Generator",
+      "Discriminator",
+      "Improving GANs",
+      "Image-to-Image Translation",
+      "Generative Adversarial Networks",
+    ],
   },
 ];
-
-
