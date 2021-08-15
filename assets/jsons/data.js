@@ -106,6 +106,21 @@ var port = [
   },
   {
     type: "work",
+    image: "grocery.jpg",
+    title: "Grocery Detection: Detect Products from the Shelf using YOLOV5",
+    link: "https://colab.research.google.com/github/shreyasvedpathak/grocery-detection/blob/main/sourcecode/Grocery%20Detection.ipynb",
+    date: "",
+    desc: "",
+    keywords: [
+      "Deep Learning",
+      "Computer Vision",
+      "Object Detection",
+      "PyTorch",
+      "YOLOV5"
+    ],
+  },
+  {
+    type: "work",
     image: "loan.png",
     title: "Loan Management System - Flask API",
     link: "https://github.com/shreyasvedpathak/loan-management-api",
