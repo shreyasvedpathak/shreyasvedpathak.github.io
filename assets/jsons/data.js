@@ -108,7 +108,7 @@ var port = [
     type: "work",
     image: "grocery.jpg",
     title: "Grocery Detection: Detect Products from the Shelf using YOLOV5",
-    link: "https://colab.research.google.com/github/shreyasvedpathak/grocery-detection/blob/main/sourcecode/Grocery%20Detection.ipynb",
+    link: "https://github.com/shreyasvedpathak/grocery-detection",
     date: "",
     desc: "",
     keywords: [
@@ -116,7 +116,7 @@ var port = [
       "Computer Vision",
       "Object Detection",
       "PyTorch",
-      "YOLOV5"
+      "YOLOV5",
     ],
   },
   {
