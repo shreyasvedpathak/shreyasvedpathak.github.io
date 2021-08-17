@@ -456,19 +456,19 @@
 			<div class="box-sm purple"></div>
 		</div>
 		<section id="cat" class="catto">
-
 			<div class="d-flex justify-content-center mt-3">
 				<div class="cat">
-					<div class="ear ear--left"></div>
-					<div class="ear ear--right"></div>
+					<div class="ear ear--left cat-sound"></div>
+					<div class="ear ear--right cat-sound"></div>
 					<div class="face">
-						<div class="eye eye--left">
+						<div class="head" style="height: 60px;"></div>
+						<div class="eye eye--left cat-sound">
 							<div class="eye-pupil"></div>
 						</div>
-						<div class="eye eye--right">
+						<div class="eye eye--right cat-sound">
 							<div class="eye-pupil"></div>
 						</div>
-						<div class="muzzle"></div>
+						<div class="muzzle cat-sound"></div>
 					</div>
 				</div>
 			</div>
@@ -476,6 +476,42 @@
 				<h2 class="text-white text-center">Meet my cat.</h2>
 				<h4 class="text-white text-center">She lives here as my mom won't allow her in our house.</h4>
 			</div>
+
+			<script>
+				var catsounds = ["meow1.mp3", "meow2.mp3", "meow3.mp3", "meow4.mp3"];
+
+				function makeSound(sound) {
+					var sound_loc = "assets/sounds/" + sound;
+					var audio = new Audio(sound_loc);
+					audio.play();
+				}
+
+				for (var i = 0; i < document.querySelectorAll(".cat-sound").length; i++) {
+					document
+						.querySelectorAll(".cat-sound")
+					[i].addEventListener("click", function () {
+						var sound = catsounds[Math.floor(Math.random() * catsounds.length)];
+						sound = makeSound(sound);
+					});
+				}
+
+				$(document).ready(function () {
+					var delay = 2000,
+						setTimeoutConst;
+					$(".head").hover(
+						function () {
+							setTimeoutConst = setTimeout(function () {
+								var sound = "purr.mp3";
+								makeSound(sound);
+							}, delay);
+						},
+						function () {
+							clearTimeout(setTimeoutConst);
+						}
+					);
+				});
+			</script>
+
 		</section>
 
 	</main><!-- End #main -->
