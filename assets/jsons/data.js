@@ -61,6 +61,16 @@ var port = [
     keywords: ["Deep Learning", "Computer Vision", "Image Segmentation"],
   },
   {
+    type: "paper",
+    image: "inpainting.jpg",
+    title:
+      "Image Fine-grained Inpainting: A Survey Paper",
+    link: "",
+    date: "",
+    desc: "",
+    keywords: ["Deep Learning", "Computer Vision", "Generative Adversarial Networks"],
+  },
+  {
     type: "work",
     image: "pcos.png",
     title:
@@ -104,21 +114,21 @@ var port = [
       "TensorFlow",
     ],
   },
-  {
-    type: "work",
-    image: "grocery.jpg",
-    title: "Grocery Detection: Detect Products from the Shelf using YOLOV5",
-    link: "https://github.com/shreyasvedpathak/grocery-detection",
-    date: "",
-    desc: "",
-    keywords: [
-      "Deep Learning",
-      "Computer Vision",
-      "Object Detection",
-      "PyTorch",
-      "YOLOV5",
-    ],
-  },
+  // {
+  //   type: "work",
+  //   image: "grocery.jpg",
+  //   title: "Grocery Detection: Detect Products from the Shelf using YOLOV5",
+  //   link: "https://github.com/shreyasvedpathak/grocery-detection",
+  //   date: "",
+  //   desc: "",
+  //   keywords: [
+  //     "Deep Learning",
+  //     "Computer Vision",
+  //     "Object Detection",
+  //     "PyTorch",
+  //     "YOLOV5",
+  //   ],
+  // },
   {
     type: "work",
     image: "loan.png",
